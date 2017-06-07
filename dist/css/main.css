@@ -1,0 +1,41 @@
+#globalNavigation {
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .7s;
+  -o-transition: all .7s;
+  transition: all .7s; }
+  #globalNavigation.nav--loaded {
+    visibility: visible; }
+  #globalNavigation.window--scroll-min {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+    background: transparent;
+    opacity: 0;
+    visibility: hidden; }
+  #globalNavigation.window--scrollx {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    background: #ffffff;
+    opacity: 1;
+    visibility: visible; }
+  #globalNavigation.window--scroll-max {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    background: #ffffff;
+    opacity: 1;
+    visibility: visible; }
+  #globalNavigation.nav--fixed {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+    visibility: visible; }
+  #globalNavigation.nav--unfixed {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+    opacity: 0;
+    visibility: hidden; }
+
+
+
+/*# sourceMappingURL=app.css.map */

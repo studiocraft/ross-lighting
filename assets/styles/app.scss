@@ -1,0 +1,45 @@
+
+#globalNavigation {
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .7s;
+
+  &.nav--loaded {
+    visibility: visible;
+  }
+
+  &.window--scroll-min {
+    transform: translate3d(0, -100%, 0);
+    background: transparent;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &.window--scrollx {
+    transform: translate3d(0, 0, 0);
+    background: #ffffff;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &.window--scroll-max {
+    transform: translate3d(0, 0, 0);
+    background: #ffffff;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &.nav--fixed {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &.nav--unfixed {
+    transform: translate3d(0, -100%, 0);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+}

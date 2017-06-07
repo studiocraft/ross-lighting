@@ -1,0 +1,24 @@
+title: Ross Lighting
+keywords: []
+author: Bryan Colosky
+year: 2017
+
+port: 4000
+url: http://studiocraft.cc
+baseurl:
+
+permalink: pretty
+
+exclude: [LICENSE, package.json, bower.json, Gruntfile.js, gulpfile.js, node_modules, bower_components, /**/styles, /**/scripts, .bowerrc, .sass-cache, .DS_Store, .gitignore, .editorconfig, .jshintrc, /*.yml, /*.txt, /*.md, /*.psd, /*.ai, /*.pdf, /*.indd, /*.idlk]
+
+company:
+  name: Ross Lighting Inc.
+  owner:
+  address:
+    street:
+    suite-floor:
+    city:
+    state-province:
+    country:
+    postal-code:
+  tagline: Quality lighting changes everything. Ross Lighting designs and manufactures water-cooled LED lighting solutions for agriculture and hydroponic applications.

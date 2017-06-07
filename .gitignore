@@ -1,0 +1,62 @@
+# ORIGINALS
+#
+_originals
+stats
+
+# SASS
+#
+.sass-cache
+*.css.map
+
+# FAVICONS
+#
+assets/images/icons/*.png
+assets/images/icons/*.ico
+!assets/images/icons/*.src.png
+!assets/images/icons/*.src.ai
+
+# BOWER
+#
+bower_components
+
+# ADOBE
+#
+*.ai
+*.indd
+*.indt
+*.idml
+*.psd
+*.pdf
+
+# JEKYLL
+#
+_site
+
+# NODE
+#
+logs
+*.log
+pids
+*.pid
+*.seed
+lib-cov
+coverage
+.grunt
+.lock-wscript
+build/Release
+node_modules
+
+# OSX
+#
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk

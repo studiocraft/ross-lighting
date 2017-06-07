@@ -1,0 +1,17 @@
+<footer class="w-100 pv0 ph0 pv6-ns ph4-ns bg-white light-silver">
+  <center class="mw7 center tl-ns pa4 ba bw4 bw3-m b--light-gray">
+    <h1 class="f2 f1-l mv2 lh-title tk-leitura-news i mid-gray">Information &amp; Policies</h1>
+    <hr class="w3 ma0 ba bw2 bw3-ns b--light-gray">
+    <ul class="list pa0 mv4 lh-copy">
+      {% for page in site.pages %}
+        {% if page.layout == "policy" %}
+          <li class="dib mr2"><a class="link hover-blue mid-gray b ttu" href="{{ site.baseurl }}/{{ page.url }}/"><small>{{ page.title }}</small></a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+    <p class="lh-copy measure">Made with <i class="fa fa-heart light-red"></i> in Portland, Oregon.</p>
+    <small class="w-100 db lh-copy">Copyright<i class="fa fa-fw fa-copyright"></i>{{ site.time | date: "%Y" }} - {{ site.title }} Inc. All rights reserved.</small>
+    <a class="db mv2 link underline-hover light-silver" href="#"><small>US Patent No. 1234567890</small></a>
+    <a class="db mv2 link underline-hover light-silver" href="#content" data-scroll><small>Back to Top</small></a>
+  </center>
+</footer>

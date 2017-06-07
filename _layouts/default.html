@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-hidden">
+  <head>
+  {% include meta/meta.html %}
+  {% include meta/css/css.html %}
+  {% include meta/js/js.html %}
+  </head>
+  <body class="{{ page.slug }} w-100 tk-neuzeit-grotesk dark-gray">
+    {% include components/loader-overlay.html %}
+
+    {% if page.layout != 'policy' %}
+      {% include components/global-navigation.html %}
+    {% endif %}
+    <main id="content" class="w-100 cf">
+      {% if page.layout == 'default' %}
+      {% include components/home-banner.html %}
+      {% endif %}
+      {{ content }}
+    </main>
+    {% include components/global-footer.html %}
+  </body>
+</html>

@@ -1,0 +1,44 @@
+---
+layout: page
+---
+
+{% assign title = page.title %}
+
+<section class="w-100 pv0 ph0 pv6-ns ph4-ns bg-white light-silver">
+  <center class="mw7 center tl-ns pa4 ba bw4 bw3-m b--light-gray">
+    <header class="wow animated fadeInDown">
+      <h1 class="f1 f-subheadline-m f-headline-l mv3 lh-solid tk-leitura-news i mid-gray">{{ title }}</h1>
+      <hr class="w3 ma0 ba bw2 bw3-ns b--light-gray">
+      <label class="db tracked mv4 light-silver b ttu">Last updated: <time>{{ site.time | date: "%B %d, %Y" }}</time></label>
+    </header>
+    <h1 class="f2 f1-ns lh-title tk-leitura-news i mid-gray">Overview</h1>
+    <p class="measure lh-copy">{{ page.overview }}</p>
+    {% case title %}
+
+    {% when 'Terms of Use' %}
+    {% if page.termination %}
+      <h2 class="f3 f2-ns lh-title tk-leitura-news i mid-gray">Termination</h2>
+      <p class="lh-copy measure-wide">{{ page.termination }}</p>
+    {% endif %}
+
+    {% when 'Privacy Policy' %}
+    {% if page.information-collection-and-use %}
+      <h2 class="f3 f2-ns lh-title tk-leitura-news i mid-gray">Information Collection And Use</h2>
+      <p class="lh-copy measure-wide">{{ page.information-collection-and-use }}</p>
+    {% endif %}
+    {% if page.log-data %}
+      <h2 class="f3 f2-ns lh-title tk-leitura-news i mid-gray">Log Data</h2>
+      <p class="lh-copy measure-wide">{{ page.ilog-data }}</p>
+    {% endif %}
+
+    {% when 'MIT License' %}
+    {% if page.information-collection-and-use %}
+      <h2 class="f3 f2-ns lh-title tk-leitura-news i mid-gray">Information Collection And Use</h2>
+      <p class="lh-copy measure-wide">{{ page.information-collection-and-use }}</p>
+    {% endif %}
+
+    {% endcase %}
+
+    <p class="lh-copy measure-wide ttu">{{ page.notice }}</p>
+  </center>
+</section>

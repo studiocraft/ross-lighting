@@ -1,0 +1,21 @@
+{
+  "name": "ross-lighting",
+  "version": "1.0.0",
+  "homepage": "http://studiocraft.cc",
+  "authors": [
+    "Bryan Colosky <bryan.colosky@studiocraft.cc>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "font-awesome": "latest",
+    "jquery": "latest",
+    "respond": "latest",
+    "animate.css": "latest"
+  }
+}

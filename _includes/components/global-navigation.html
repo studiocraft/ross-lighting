@@ -1,0 +1,17 @@
+<header class="w-100 pv0 ph0 pv3-ns ph4-ns z-max light-silver bg-animate" id="globalNavigation">
+  <nav class="mw7 center tl-ns pv2 ph4 ba bw4 bw3-m b--mid-gray">
+    <ul class="list pa0 mv0 lh-copy">
+      {% if page.layout == 'default' %}
+      <li class="dib mr2"><a class="link hover-blue mid-gray b ttu" href="#about" data-scroll>About</a></li>
+      <li class="dib mr2"><a class="link hover-blue mid-gray b ttu" href="#light" data-scroll>LED Light™</a></li>
+      <li class="dib mr2"><a class="link hover-blue mid-gray b ttu" href="#services" data-scroll>Services</a></li>
+      <li class="dib mr2"><a class="link hover-blue mid-gray b ttu" href="#contact" data-scroll>Contact</a></li>
+      {% else %}
+      <li class="dib mr2"><a class="link hover-blue mid-gray b ttu" href="{{ site.baseurl }}/about/" data-scroll>About</a></li>
+      <li class="dib mr2"><a class="link hover-blue mid-gray b ttu" href="#light" data-scroll>LED Light™</a></li>
+      <li class="dib mr2"><a class="link hover-blue mid-gray b ttu" href="#services" data-scroll>Services</a></li>
+      <li class="dib mr2"><a class="link hover-blue mid-gray b ttu" href="#contact" data-scroll>Contact</a></li>
+      {% endif %}
+    </ul>
+  </nav>
+</header>

@@ -1,0 +1,6 @@
+{% include meta/css/vendor-css.html %}
+{% if site.github %}
+<link href="{{ site.baseurl }}dist/css/main.min.css" rel="stylesheet">
+{% else %}
+<link href="{{ site.baseurl }}dist/css/app.css" rel="stylesheet">
+{% endif %}
